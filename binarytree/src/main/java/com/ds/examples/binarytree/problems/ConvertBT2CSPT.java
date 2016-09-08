@@ -1,9 +1,9 @@
-package com.ds.examples.binarytree;
+package com.ds.examples.binarytree.problems;
 
-import com.ds.examples.binarytree.com.ds.examples.binarytree.common.BinaryTreeRecursiveTraversal;
+import com.ds.examples.binarytree.base.BinaryTreeRecursiveTraversal;
+import com.ds.examples.binarytree.base.Node;
 
 /**
- * Created by D-YW44CN on 2/09/2016.
  * Convert an arbitrary Binary Tree to a tree that holds Children Sum Property
  */
 public class ConvertBT2CSPT {

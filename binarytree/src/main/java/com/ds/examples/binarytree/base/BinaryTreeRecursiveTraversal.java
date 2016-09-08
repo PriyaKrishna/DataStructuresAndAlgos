@@ -1,6 +1,4 @@
-package com.ds.examples.binarytree.com.ds.examples.binarytree.common;
-
-import com.ds.examples.binarytree.Node;
+package com.ds.examples.binarytree.base;
 
 /**
  * Created by D-YW44CN on 2/09/2016.

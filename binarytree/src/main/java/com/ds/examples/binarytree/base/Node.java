@@ -1,4 +1,4 @@
-package com.ds.examples.binarytree;
+package com.ds.examples.binarytree.base;
 
 /**
  * Created by D-YW44CN on 2/09/2016.
