@@ -24,6 +24,20 @@ public class RootToLeafPathSum {
         return false;
     }
 
+    public boolean sumExistsBetterApproach(Node root, int sum) {
+        if (root == null) {
+            System.out.println("Sum is " + sum);
+            if (sum == 0) return true;
+            return false;
+        }
+        sum = sum - root.getData();
+
+        if (sumExistsBetterApproach(root.getLeft(),sum) || (sumExistsBetterApproach(root.getRight(), sum))) {
+            return true;
+        }
+        return false;
+    }
+
     private class Count {
         int val;
 
@@ -57,5 +71,11 @@ public class RootToLeafPathSum {
         System.out.println("Sum exists " + instance.sumExists(root, ct, 14 ));
         System.out.println("Sum exists " + instance.sumExists(root, ct, 10 ));
         System.out.println("Sum exists " + instance.sumExists(root, ct, 8 ));
+
+        System.out.println("Sum exists BetterApproach " + instance.sumExistsBetterApproach(root,  23 ));
+        System.out.println("Sum exists BetterApproach " + instance.sumExistsBetterApproach(root,  21 ));
+        System.out.println("Sum exists BetterApproach " + instance.sumExistsBetterApproach(root,  14 ));
+        System.out.println("Sum exists BetterApproach " + instance.sumExistsBetterApproach(root,  10 ));
+        System.out.println("Sum exists BetterApproach " + instance.sumExistsBetterApproach(root,  8 ));
     }
 }
